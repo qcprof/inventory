@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <title>Inventory Tracker</title>
+  </head>
+  <body>
+    <h1>XYZ Clothing Store</h1>
+    <a href="http://amazon.com">View our competitor's website</a>
+
+    <div>
+      <h2>Inventory Management</h2>
+      <form>
+        <h3>Add Inventory Item</h3>
+        <label for="description">Item Description</label>
+        <input type="text" name="description" id="description" required />
+        <br /><br />
+        <label for="details">Detailed Description</label>
+        <br />
+        <textarea name="details" id="details" cols="40" rows="10"></textarea>
+        <br /><br />
+        <label for="cost">Cost per Unit</label>
+        <input type="number" name="cost" id="cost" />
+        <br /><br />
+        <label for="quantity">Quantity Purchased</label>
+        <input type="number" name="quantity" id="quantity" />
+        <h3>Gender</h3>
+        <label>
+          <input type="radio" name="gender" value="men" id="men" />For Men
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="gender" value="women" id="women" />For Women
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="gender" value="either" id="either" />Gender
+          Neutral
+        </label>
+        <h3>Warehouse Location</h3>
+        <select name="location" id="location" multiple>
+          <option value="ny">New York</option>
+          <option value="nj">New Jersey</option>
+          <option value="ct">Connecticut</option>
+          <option value="pa">Pennsylvania</option>
+        </select>
+        <h3>Color</h3>
+        <label>
+          <input type="radio" name="color" value="red" id="red-color" />Red
+        </label>
+        <label>
+          <input type="radio" name="color" value="blue" id="blue-color" />Blue
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="color"
+            value="green"
+            id="green-color"
+          />Green
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="color"
+            value="green"
+            id="black-color"
+          />Black
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="color"
+            value="green"
+            id="purple-color"
+          />Purple
+        </label>
+
+        <h3>Image</h3>
+        <input type="file" name="item-image" id="item-image" />
+        <h3>Category</h3>
+        <select name="category" id="category" multiple>
+          <option value="0">--- Please Select ---</option>
+          <option value="1">Shirts</option>
+          <option value="2">Pants</option>
+          <option value="3">Jackets</option>
+          <option value="4">Skirts</option>
+          <option value="5">Blouses</option>
+          <option value="6">Swimwear</option>
+          <option value="7">Socks</option>
+          <option value="8">Sneakers</option>
+          <option value="9">Sleepwear</option>
+          <option value="10">Robes</option>
+          <option value="11">Hats</option>
+          <option value="12">Overcoats</option>
+        </select>
+
+        <h3>Attributes</h3>
+        <label for="tax-exempt">
+          <input type="checkbox" name="tax-exempt" id="tax-exempt" />
+          This item is <strong>Exempt from Sale Tax</strong>.
+        </label>
+        <br />
+        <label for="on-sale">
+          <input type="checkbox" name="on-sale" id="on-sale" />
+          This item is on Sale.
+        </label>
+        <br />
+        <label for="discontinued">
+          <input type="checkbox" name="discontinued" id="discontinued" />
+          <em>This item has been discontinued.</em>
+        </label>
+        <h3>Notes</h3>
+        <textarea name="notes" id="notes" cols="40" rows="10"></textarea>
+        <br /><br />
+        <button type="submit">Save</button>
+        <button type="reset">Clear</button>
+      </form>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>Most Recent Purchases</h2>
+      <p>
+        The table below lists the three most recently entered inventory
+        purchases.
+      </p>
+      <table>
+        <thead>
+          <th>Item</th>
+          <th>Cost</th>
+          <th>Quantity</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Striped Sweatshirt</td>
+            <td>$17.43</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>Solid Hoodie</td>
+            <td>$12.35</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Casual Pants</td>
+            <td>$22.87</td>
+            <td>500</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+    </div>
+    <!-- The following button does not do anything yet. -->
+    <button>View Full Inventory Report</button>
+  </body>
+</html>
